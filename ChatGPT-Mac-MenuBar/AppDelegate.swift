@@ -56,6 +56,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 		hotKey.keyUpHandler = { // Global hotkey handler
 			self.togglePopover()
 		}
+		
+		DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+			self.togglePopover()
+		}
 	}
 	
 	@objc func handleMenuIconAction(sender: NSStatusBarButton) {
