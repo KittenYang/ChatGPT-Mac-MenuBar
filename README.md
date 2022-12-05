@@ -13,5 +13,11 @@ Chat with OpenAI's ChatGPT in mac menu bar like a pro.
 # Credit
 [OpenAI](https://openai.com/)
 
+# Download
+Instead of build the source code, you can use the archived dmg right away!
+
+[Install-ChatGPT.dmg](https://github.com/KittenYang/ChatGPT-Mac-MenuBar/raw/main/Install-ChatGPT.dmg)
+
+
 # Note
 It is a very basic app to bridge a webview to the status bar. So it must have inevitable limits. Feel free to make pull requests or reach me on [@KittenYang](https://twitter.com/KittenYang)
