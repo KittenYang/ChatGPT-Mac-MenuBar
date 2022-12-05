@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		336A9F57293DCEEE0041AF09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A9F56293DCEEE0041AF09 /* AppDelegate.swift */; };
+		336A9F59293DCEEE0041AF09 /* MainNSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A9F58293DCEEE0041AF09 /* MainNSViewController.swift */; };
+		336A9F5B293DCEEF0041AF09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336A9F5A293DCEEF0041AF09 /* Assets.xcassets */; };
+		336A9F67293DD0820041AF09 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A9F66293DD0820041AF09 /* main.swift */; };
+		336A9F69293DD1150041AF09 /* MainUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A9F68293DD1150041AF09 /* MainUI.swift */; };
+		336A9F6C293DDC6F0041AF09 /* SwiftUIWebView in Frameworks */ = {isa = PBXBuildFile; productRef = 336A9F6B293DDC6F0041AF09 /* SwiftUIWebView */; };
+		336A9F71293E0C410041AF09 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 336A9F70293E0C410041AF09 /* HotKey */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		336A9F53293DCEEE0041AF09 /* ChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		336A9F56293DCEEE0041AF09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		336A9F58293DCEEE0041AF09 /* MainNSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNSViewController.swift; sourceTree = "<group>"; };
+		336A9F5A293DCEEF0041AF09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		336A9F5F293DCEEF0041AF09 /* ChatGPT_Mac_MenuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPT_Mac_MenuBar.entitlements; sourceTree = "<group>"; };
+		336A9F66293DD0820041AF09 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		336A9F68293DD1150041AF09 /* MainUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUI.swift; sourceTree = "<group>"; };
+		336A9F6E293E0AE90041AF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		336A9F50293DCEEE0041AF09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336A9F71293E0C410041AF09 /* HotKey in Frameworks */,
+				336A9F6C293DDC6F0041AF09 /* SwiftUIWebView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		336A9F4A293DCEEE0041AF09 = {
+			isa = PBXGroup;
+			children = (
+				336A9F55293DCEEE0041AF09 /* ChatGPT-Mac-MenuBar */,
+				336A9F54293DCEEE0041AF09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		336A9F54293DCEEE0041AF09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				336A9F53293DCEEE0041AF09 /* ChatGPT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		336A9F55293DCEEE0041AF09 /* ChatGPT-Mac-MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				336A9F6E293E0AE90041AF09 /* Info.plist */,
+				336A9F56293DCEEE0041AF09 /* AppDelegate.swift */,
+				336A9F66293DD0820041AF09 /* main.swift */,
+				336A9F58293DCEEE0041AF09 /* MainNSViewController.swift */,
+				336A9F68293DD1150041AF09 /* MainUI.swift */,
+				336A9F5A293DCEEF0041AF09 /* Assets.xcassets */,
+				336A9F5F293DCEEF0041AF09 /* ChatGPT_Mac_MenuBar.entitlements */,
+			);
+			path = "ChatGPT-Mac-MenuBar";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		336A9F52293DCEEE0041AF09 /* ChatGPT-Mac-MenuBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 336A9F62293DCEEF0041AF09 /* Build configuration list for PBXNativeTarget "ChatGPT-Mac-MenuBar" */;
+			buildPhases = (
+				336A9F4F293DCEEE0041AF09 /* Sources */,
+				336A9F50293DCEEE0041AF09 /* Frameworks */,
+				336A9F51293DCEEE0041AF09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChatGPT-Mac-MenuBar";
+			packageProductDependencies = (
+				336A9F6B293DDC6F0041AF09 /* SwiftUIWebView */,
+				336A9F70293E0C410041AF09 /* HotKey */,
+			);
+			productName = "ChatGPT-Mac-MenuBar";
+			productReference = 336A9F53293DCEEE0041AF09 /* ChatGPT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		336A9F4B293DCEEE0041AF09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					336A9F52293DCEEE0041AF09 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 336A9F4E293DCEEE0041AF09 /* Build configuration list for PBXProject "ChatGPT-Mac-MenuBar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 336A9F4A293DCEEE0041AF09;
+			packageReferences = (
+				336A9F6A293DDC6F0041AF09 /* XCRemoteSwiftPackageReference "swiftui-webview" */,
+				336A9F6F293E0C410041AF09 /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
+			productRefGroup = 336A9F54293DCEEE0041AF09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				336A9F52293DCEEE0041AF09 /* ChatGPT-Mac-MenuBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		336A9F51293DCEEE0041AF09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336A9F5B293DCEEF0041AF09 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		336A9F4F293DCEEE0041AF09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336A9F59293DCEEE0041AF09 /* MainNSViewController.swift in Sources */,
+				336A9F57293DCEEE0041AF09 /* AppDelegate.swift in Sources */,
+				336A9F69293DD1150041AF09 /* MainUI.swift in Sources */,
+				336A9F67293DD0820041AF09 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		336A9F60293DCEEF0041AF09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		336A9F61293DCEEF0041AF09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		336A9F63293DCEEF0041AF09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ChatGPT-Mac-MenuBar/ChatGPT_Mac_MenuBar.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R78WMUBTG5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChatGPT-Mac-MenuBar/Info.plist";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kittenyang.ios.ChatGPT-Mac-MenuBar";
+				PRODUCT_NAME = ChatGPT;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		336A9F64293DCEEF0041AF09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ChatGPT-Mac-MenuBar/ChatGPT_Mac_MenuBar.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R78WMUBTG5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChatGPT-Mac-MenuBar/Info.plist";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kittenyang.ios.ChatGPT-Mac-MenuBar";
+				PRODUCT_NAME = ChatGPT;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		336A9F4E293DCEEE0041AF09 /* Build configuration list for PBXProject "ChatGPT-Mac-MenuBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336A9F60293DCEEF0041AF09 /* Debug */,
+				336A9F61293DCEEF0041AF09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		336A9F62293DCEEF0041AF09 /* Build configuration list for PBXNativeTarget "ChatGPT-Mac-MenuBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336A9F63293DCEEF0041AF09 /* Debug */,
+				336A9F64293DCEEF0041AF09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		336A9F6A293DDC6F0041AF09 /* XCRemoteSwiftPackageReference "swiftui-webview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-webview";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		336A9F6F293E0C410041AF09 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		336A9F6B293DDC6F0041AF09 /* SwiftUIWebView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 336A9F6A293DDC6F0041AF09 /* XCRemoteSwiftPackageReference "swiftui-webview" */;
+			productName = SwiftUIWebView;
+		};
+		336A9F70293E0C410041AF09 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 336A9F6F293E0C410041AF09 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 336A9F4B293DCEEE0041AF09 /* Project object */;
+}
