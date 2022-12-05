@@ -14,7 +14,7 @@ Chat with OpenAI's ChatGPT in mac menu bar like a pro.
 [OpenAI](https://openai.com/)
 
 # Download
-Instead of build the source code, you can use the archived dmg right away!
+Instead of building the source code, you can use the archived .dmg file right away!
 
 [Install-ChatGPT.dmg](https://github.com/KittenYang/ChatGPT-Mac-MenuBar/raw/main/Install-ChatGPT.dmg)
 
