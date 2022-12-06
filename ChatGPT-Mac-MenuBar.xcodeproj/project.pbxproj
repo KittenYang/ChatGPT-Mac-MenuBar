@@ -12,8 +12,8 @@
 		336A9F5B293DCEEF0041AF09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336A9F5A293DCEEF0041AF09 /* Assets.xcassets */; };
 		336A9F67293DD0820041AF09 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A9F66293DD0820041AF09 /* main.swift */; };
 		336A9F69293DD1150041AF09 /* MainUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A9F68293DD1150041AF09 /* MainUI.swift */; };
-		336A9F6C293DDC6F0041AF09 /* SwiftUIWebView in Frameworks */ = {isa = PBXBuildFile; productRef = 336A9F6B293DDC6F0041AF09 /* SwiftUIWebView */; };
 		336A9F71293E0C410041AF09 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 336A9F70293E0C410041AF09 /* HotKey */; };
+		3396A0F1293E350300A1F26A /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396A0F0293E350300A1F26A /* SwiftUIWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +25,7 @@
 		336A9F66293DD0820041AF09 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		336A9F68293DD1150041AF09 /* MainUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUI.swift; sourceTree = "<group>"; };
 		336A9F6E293E0AE90041AF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3396A0F0293E350300A1F26A /* SwiftUIWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +34,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				336A9F71293E0C410041AF09 /* HotKey in Frameworks */,
-				336A9F6C293DDC6F0041AF09 /* SwiftUIWebView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +64,7 @@
 				336A9F66293DD0820041AF09 /* main.swift */,
 				336A9F58293DCEEE0041AF09 /* MainNSViewController.swift */,
 				336A9F68293DD1150041AF09 /* MainUI.swift */,
+				3396A0F0293E350300A1F26A /* SwiftUIWebView.swift */,
 				336A9F5A293DCEEF0041AF09 /* Assets.xcassets */,
 				336A9F5F293DCEEF0041AF09 /* ChatGPT_Mac_MenuBar.entitlements */,
 			);
@@ -87,7 +88,6 @@
 			);
 			name = "ChatGPT-Mac-MenuBar";
 			packageProductDependencies = (
-				336A9F6B293DDC6F0041AF09 /* SwiftUIWebView */,
 				336A9F70293E0C410041AF09 /* HotKey */,
 			);
 			productName = "ChatGPT-Mac-MenuBar";
@@ -119,7 +119,6 @@
 			);
 			mainGroup = 336A9F4A293DCEEE0041AF09;
 			packageReferences = (
-				336A9F6A293DDC6F0041AF09 /* XCRemoteSwiftPackageReference "swiftui-webview" */,
 				336A9F6F293E0C410041AF09 /* XCRemoteSwiftPackageReference "HotKey" */,
 			);
 			productRefGroup = 336A9F54293DCEEE0041AF09 /* Products */;
@@ -150,6 +149,7 @@
 				336A9F59293DCEEE0041AF09 /* MainNSViewController.swift in Sources */,
 				336A9F57293DCEEE0041AF09 /* AppDelegate.swift in Sources */,
 				336A9F69293DD1150041AF09 /* MainUI.swift in Sources */,
+				3396A0F1293E350300A1F26A /* SwiftUIWebView.swift in Sources */,
 				336A9F67293DD0820041AF09 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,14 +352,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		336A9F6A293DDC6F0041AF09 /* XCRemoteSwiftPackageReference "swiftui-webview" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/globulus/swiftui-webview";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		336A9F6F293E0C410041AF09 /* XCRemoteSwiftPackageReference "HotKey" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/soffes/HotKey.git";
@@ -371,11 +363,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		336A9F6B293DDC6F0041AF09 /* SwiftUIWebView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 336A9F6A293DDC6F0041AF09 /* XCRemoteSwiftPackageReference "swiftui-webview" */;
-			productName = SwiftUIWebView;
-		};
 		336A9F70293E0C410041AF09 /* HotKey */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 336A9F6F293E0C410041AF09 /* XCRemoteSwiftPackageReference "HotKey" */;

@@ -37,6 +37,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	private var menu: NSMenu!
 	
 	let hotKey = HotKey(key: .c, modifiers: [.shift, .command])  // Global hotkey
+
+	var hotCKey: HotKey?
+	var hotVKey: HotKey?
+	var hotZKey: HotKey?
+	var hotXKey: HotKey?
+	var hotAKey: HotKey?
 	
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		
@@ -92,6 +98,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	func constructPopover() {
 		popover = NSPopover()
 		popover.contentViewController = MainNSViewController()
+		popover.delegate = self
 		popover.behavior = NSPopover.Behavior.transient;
 	}
 	
@@ -107,12 +114,51 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	func togglePopover() {
 		if popover.isShown {
 			popover.performClose(nil)
+			deinitKeys()
 		} else {
 			if let button = statusItem.button {
 				NSApplication.shared.activate(ignoringOtherApps: true)
 				popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
 				popover.contentViewController?.view.window?.makeKey()
+				constructKeys()
 			}
+		}
+	}
+	
+	private func deinitKeys() {
+		hotCKey = nil
+		hotVKey = nil
+		hotXKey = nil
+		hotZKey = nil
+		hotAKey = nil
+	}
+	
+	private func constructKeys() {
+		
+		hotCKey = HotKey(key: .c, modifiers: [.command])  // Global hotkey
+		hotVKey = HotKey(key: .v, modifiers: [.command])  // Global hotkey
+		hotZKey = HotKey(key: .z, modifiers: [.command])  // Global hotkey
+		hotXKey = HotKey(key: .x, modifiers: [.command])  // Global hotkey
+		hotAKey = HotKey(key: .a, modifiers: [.command])  // Global hotkey
+		
+		hotCKey?.keyDownHandler = {
+			NSApp.sendAction(#selector(NSText.copy(_:)), to:nil, from:self)
+		}
+		
+		hotVKey?.keyDownHandler = {
+			NSApp.sendAction(#selector(NSText.paste(_:)), to:nil, from:self)
+		}
+		
+		hotXKey?.keyDownHandler = {
+			NSApp.sendAction(#selector(NSText.cut(_:)), to:nil, from:self)
+		}
+		
+		hotZKey?.keyDownHandler = {
+			NSApp.sendAction(Selector("undo:"), to:nil, from:self)
+		}
+		
+		hotAKey?.keyDownHandler = {
+			NSApp.sendAction(#selector(NSStandardKeyBindingResponding.selectAll(_:)), to:nil, from:self)
 		}
 	}
 	
@@ -125,4 +171,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	}
 
 
+}
+
+extension AppDelegate: NSPopoverDelegate {
+	func popoverWillClose(_ notification: Notification) {
+		self.deinitKeys()
+	}
 }

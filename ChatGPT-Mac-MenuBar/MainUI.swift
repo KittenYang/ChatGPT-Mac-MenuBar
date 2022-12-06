@@ -34,11 +34,18 @@ struct MainUI: View {
 	@State private var state = WebViewState.empty
 	@State private var address = "https://chat.openai.com/chat"
 	
+	var webConfig: WebViewConfig {
+		var defaultC = WebViewConfig.default
+		defaultC.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+		return defaultC
+	}
+	
 	var body: some View {
 		VStack(spacing:0.0) {
 			navigationToolbar
 			errorView
-			WebView(action: $action,
+			WebView(config: webConfig,
+					action: $action,
 					state: $state,
 					restrictedPages: nil)
 		}
