@@ -7,6 +7,8 @@ Chat with OpenAI's ChatGPT in mac menu bar like a pro.
 
 ✅ **Right click** on the menu bar icon to **Clean Cookies** for login another OpenAI's account
 
+✅ Handle keyboard shortcuts `cmd+c/v/x/z/a` with webview
+
 
 ![](resource/snapshot.png)
 
