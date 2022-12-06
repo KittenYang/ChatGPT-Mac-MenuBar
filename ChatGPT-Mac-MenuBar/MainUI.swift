@@ -27,7 +27,6 @@
 
 import SwiftUI
 import WebKit
-import SwiftUIWebView
 
 struct MainUI: View {
 	@State private var action = WebViewAction.idle
