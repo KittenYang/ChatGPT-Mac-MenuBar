@@ -33,7 +33,7 @@ class MainNSViewController: NSViewController {
 		// create a hosting controller with your SwiftUI view
 		let hostingController = NSHostingController(rootView: MainUI())
 		self.view = hostingController.view
-		self.view.frame = CGRect(origin: .zero, size: .init(width: 450, height: 550))
+		self.view.frame = CGRect(origin: .zero, size: .init(width: 500, height: 600))
 	}
 	override func mouseDragged(with event: NSEvent) {
 		guard let appDelegate: AppDelegate = NSApplication.shared.delegate as? AppDelegate else { return }

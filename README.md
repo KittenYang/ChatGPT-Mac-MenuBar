@@ -9,6 +9,8 @@ Chat with OpenAI's ChatGPT in mac menu bar like a pro.
 
 ✅ Handle keyboard shortcuts `cmd+c/v/x/z/a` with webview
 
+✅ Popover Window Resizable
+
 
 ![](resource/snapshot.png)
 
