@@ -119,6 +119,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 			if let button = statusItem.button {
 				NSApplication.shared.activate(ignoringOtherApps: true)
 				popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
+				popover.contentViewController?.view.window?.level = .floating
 				popover.contentViewController?.view.window?.makeKey()
 				constructKeys()
 			}
