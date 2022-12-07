@@ -48,6 +48,7 @@ struct MainUI: View {
 					action: $action,
 					state: $state,
 					restrictedPages: nil)
+			Image(systemName: "line.3.horizontal")
 		}
 		.onAppear {
 			if let url = URL(string: address) {

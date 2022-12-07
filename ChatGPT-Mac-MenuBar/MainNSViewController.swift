@@ -35,5 +35,13 @@ class MainNSViewController: NSViewController {
 		self.view = hostingController.view
 		self.view.frame = CGRect(origin: .zero, size: .init(width: 450, height: 550))
 	}
+	override func mouseDragged(with event: NSEvent) {
+		guard let appDelegate: AppDelegate = NSApplication.shared.delegate as? AppDelegate else { return }
+		var size = appDelegate.popover?.contentSize ?? CGSize.zero
+		size.width += event.deltaX
+		size.height += event.deltaY
+		// Update popover size depend on your reference
+		appDelegate.popover?.contentSize = size
+	}
 }
 

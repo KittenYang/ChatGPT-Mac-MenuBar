@@ -33,7 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	
 	private var statusItem: NSStatusItem!
 	
-	private var popover: NSPopover!
+	public var popover: NSPopover!
 	private var menu: NSMenu!
 	
 	let hotKey = HotKey(key: .c, modifiers: [.shift, .command])  // Global hotkey
