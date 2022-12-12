@@ -14,6 +14,10 @@ Chat with OpenAI's ChatGPT in mac menu bar like a pro.
 
 ![](resource/snapshot.png)
 
+# Requirements
+macOS 12.5+
+
+
 # Credit
 [OpenAI](https://openai.com/)
 
